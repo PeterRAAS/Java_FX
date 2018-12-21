@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lottoFX.VerifyDialogFXController">
+   <top>
+      <Pane minHeight="-Infinity" prefHeight="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="infoLabel" layoutX="67.0" layoutY="12.0" />
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <ToolBar minHeight="40.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="generateButton" mnemonicParsing="false" onAction="#generateButtonPressed" text="Generate" />
+            <Button fx:id="verifyButton" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#verifyButtonPressed" text="Verify" />
+        </items>
+      </ToolBar>
+   </bottom>
+   <center>
+      <ScrollPane fx:id="scrollPane" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <TilePane fx:id="panel" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
